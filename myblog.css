@@ -1,0 +1,211 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+}
+body{
+    background: #f1f1f1;
+}
+/*Header*/
+.header{
+    padding: 30px;
+    text-align: center;
+}
+.header h1{
+    font-size: 35px;
+    font-weight: 500;
+    
+}
+.header p{
+    margin-top: 25px;
+    font-weight: 100;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header p span{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+}
+/*Layout*/
+.container{
+    display: flex;
+    padding: 20px;
+    gap: 40px;
+}
+/*Main content*/
+.main{
+    flex: 60%;
+}
+/*sidebar*/
+.sidebar{
+    flex: 30%;
+}
+/*Cards*/
+.card{
+    background-color: white;
+    margin-bottom: 35px;
+    box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Images*/
+.img-box{
+    background-color: #ccc;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.img-box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.main-text{
+    padding: 15px;
+}
+.card-text-heading{
+    margin-bottom: 30px;
+}
+.card-text-heading h2{
+    font-size: 25px;
+    font-weight: 400px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+.card-text-heading h5{
+    font-weight: 400;
+    font-size: 18px;
+}
+.card-text-heading h5 span{
+    opacity: 0.6;
+}
+.card-text-content{
+    font-size: 15px;
+    line-height: 1.5;
+    text-align: justify;
+}
+.card-button{
+    width: 100%;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.card-button-left button{
+    border: 1px solid lightgray;
+    background: #fff;
+    padding: 15px;
+    text-align: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+.card-button-left button:hover{
+    background-color: lightgray;
+}
+.card-button-right{
+    padding-top: 15px;
+}
+.card-button-right span{
+    background-color: #000;
+    color: #fff;
+    padding: 3px 8px;
+    font-size: 15px;
+    margin-left: 10px;
+}
+.card-button-right .rounded{
+    border-radius: 50%;
+}
+.name{
+    margin-bottom: 20px;
+}
+.card-content{
+    font-size: 15px;
+    line-height:1.5;
+}
+/*post*/
+.post-heading{
+    background-color: lightgrey;
+    padding: 25px;
+}
+.post-heading h4{
+    font-size: 20px;
+    font-weight: 100;
+
+}
+.post{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+.post img{
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin: 15px;
+}
+.post:hover{
+    background-color: lightgray;
+}
+.post-title{
+    background-color: lightgray;
+}
+.post-title{
+    padding-bottom: 5px;
+}
+/*tags*/
+.tags{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 13px;
+}
+.tags .active{
+    background-color: #000;
+    color: #fff;
+    font-size: 15px;
+}
+.tags span{
+    background-color: #ccc;
+    padding: 3px 6px;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+/*footer*/
+footer{
+    height: 150px;
+    background-color: #616161;
+    padding: 15px;
+}
+.text-button{
+    padding: 20px 0;
+}
+.text-button button{
+    background-color: black;
+    color:white;
+    border: none;
+    padding: 12px 25px;
+    font-size: 15px;
+}
+.btn-next{
+    margin-left: 3px;
+    cursor: pointer;
+}
+.btn-next:hover{
+    background-color: white;
+    color: black;
+}
+.btn-pre{
+    cursor: not-allowed;
+}
+.btn-pre:hover{
+    background-color: #fff;
+    color: #000;
+}
+footer small{
+    color: #fff;
+    font-size: 15px;
+}
+@media(max-width:820px) {
+    .container{
+        flex-direction: column;
+    }
+}

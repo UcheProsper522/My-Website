@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introduction to media queries</title>
+</head>
+<style>
+    p:first-child {
+        color: blue;
+    }
+    .holder div:nth-child(1) {
+        background-color: yellow;
+        height: 200px;
+    }
+    .holder div:nth-child(2) {
+        background-color: teal;
+        height: 200px;
+    }
+    .holder div:nth-child(3) {
+        background-color: brown;
+    }
+    h3::first-line{
+        color:blue;
+    }
+    h3::first-letter {
+        color: crimson;
+    }
+    .decendant-s h1 {
+        text-transform: uppercase;
+    }
+    .child-s > h2 {
+        color: teal;
+    }
+    .adjacent-siblings-s + h3 {
+        text-decoration: underline;
+    }
+    .general-s ~ h2{
+        color: purple;
+    }
+</style>
+</head>
+<body>
+    <p lorem ipsum dolor sit amet.></p>
+    <p> Lorem ipsum dolor sit amet consectetur</p>
+<div class="holder"></div>    
+<div></div>
+<div></div>
+<div></div>
+</div>
+<h3> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint rerum ullam voluptatem hic nulla illo mollitia rem incidunt, tempore assumenda, distinctio sed nemo quia sunt explicabo eligendi suscipit temporibus omnis.</h3> 
+
+<!-- Combinators  -->
+<div class="decendant-s"></div>
+<h1>good morning</h1>
+<p>hello class</p>
+<div>
+    <h1>good afternoon</h1>
+</div>
+</div>
+<div class="child-s"></div>
+<h2> chapter 1</h2>
+<h4>hello web class </h4>
+<div>
+ <h2>chapter 2</h2>
+</div>
+<h2>chapter 3</h2>
+</div>
+<div class="adjacent-siblings-s">
+    <h3>section 1</h3>
+    <p>Hello world</p>
+</div>
+<h3>section 2</h3>
+</div>
+<h3>section 3</h3>
+</div>
+<h3>section 4</h3>
+<h3>section 5</h3>
+<div class="general-s"></div>
+<h2>chapter 1</h2>
+<h4>hello web class</h4>
+<div>
+    <h2>chapter 2</h2>
+</div>
+<h2>chapter 3</h2>
+</div>
+<h2>chapter 4</h2>
+<h2>chapter 5</h2>
+</body>
+
+</html>

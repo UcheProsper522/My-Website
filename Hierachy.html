@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Specificity Hierachy</title>
+</head>
+<style>
+        body{
+            background-color: skyblue;
+        }
+ P{
+    color:blueviolet; 
+ }
+ h2{
+    text-transform: uppercase; 
+ }
+ #text{
+    text-transform: lowercase;
+ }
+ h1{
+    text-transform: capitalize;  
+ }
+ .text{
+    text-transform: uppercase; 
+ }
+ /*Attribute Selectorr*/
+ input[type="email"]{
+    width: 50%;
+ }
+ /*pseudo-classes*/
+ a.link{
+    text-decoration: none;
+ }
+ a:visited{
+    color: purple;
+ }
+ a:hover{
+    color: red;
+ }
+ /*Pseudo-element*/
+ ::placeholder{
+    color: darkblue;
+ } 
+ h3::before{
+    content: "web Class";
+ }
+ h3::after{
+    content: url(img/gif1.gif);
+ }
+
+</style>
+<body>
+ <p style="color: blue;" id="demo">Hello</p>
+ <h2>Good morning</h2>
+ <h2 id="text">Good Afternoon</h2>
+ <h1>Lorem ipsum dolor sit.</h1>
+ <h1 class="text">Lorem ipsum.</h1>
+ <input type="text" placeholder="name">
+ <input type="email" placeholder="email" id="con">
+ <a href="#">Click Me</a>
+<marquee behaviour=""direction"" direction="right">welcome to my website</marquee>
+</body>
+</html>
