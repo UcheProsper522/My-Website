@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+</head>
+<body>
+  <h1 id="heading"></h1>
+  <p class="text">paragraph 1</p>
+  <h2 class="text">Lorem, ipsum dolor.</h2>
+  <h3>chapter 1</h3>
+  <h3>chapter 2</h3>
+  <h2 id="con">good afternoon</h2>
+  <h3 id="demo"></h3>
+  <script>
+    //Accessing an Object in the DOM
+    //Accessing by ID
+    let heading = document.getElementById("heading");
+    console.log(heading);
+
+    //Accessing by Class Name
+    let items = document.getElementsByClassName('text');
+    console.log(items);
+
+    //Accessing by Tag Name
+    let elements = document.getElementsByTagName('h3');
+    console.log(elements);
+
+    //Using querySelector()
+    let element = document.querySelector(".text");
+    console.log(element);
+    let title = document.querySelector("#heading");
+    console.log(title);
+    let tag = document.querySelector('h3');
+    console.log(tag);
+
+    // using querySelectAll()
+    let elems = document.querySelectorAll(".text");
+    console.log(elems);
+
+    //Changing text
+    heading.innerHTML = "Hello JavaScript lass";
+    document.getElementById("con").innerHTML = "Good day";
+
+    document.getElementById('demo').textContent = "Hello World!";
+
+
+    let img = document.createElement('img');
+    img.src=""
+    document.body.appendChild(img);
+    let a = document.createElement('a')
+    a.target= 
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    let name ="Lloyd";
+    const PI =3.142;
+    var city = "Lagos";
+
+    console.log(name);
+    console.log(pi);
+    console.log(city);
+
+    // Type of variables//
+    let username = "Elvis";//string
+    let score =90; //Number
+    let isActve = true//boolean
+    let Student = null;//Null
+    let course; //undifined
+
+    console. log(type of username);
+    
+  </script>
+</body>
+</html>
