@@ -149,8 +149,8 @@ margin-top:25px;
 line-height:2;
 }
 .contact{
-    width:80%;
-    max-width:900px;
+    width:95%;
+    max-width:1300px;
     margin:60px auto;
 }
 .contact h1{
@@ -191,20 +191,30 @@ button{
 
 button:hover{
     background:black;
-}
-footer{
-text-align:center;
-padding:30px;
-border-top:1px solid #000;
-background-color: lightgray;
-}
-.social-icons a{
-  color: black;
-  font-size: 25px;
-  margin: 0 10px;
-  text-decoration: none;
+}footer{
+    padding:30px;
+    border-top:1px solid #000;
+    background-color:lightgray;
 }
 
+.footer-content{
+    width:95%;
+    max-width:1300px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.social-icons a{
+    color:black;
+    font-size:25px;
+    margin:0 10px;
+    text-decoration:none;
+}
+.social-icons a:hover{
+    color:#00bcd4;
+}
 .social-icons a:hover {
   color: #00bcd4;
 }
