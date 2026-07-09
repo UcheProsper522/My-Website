@@ -198,6 +198,16 @@ padding:30px;
 border-top:1px solid #000;
 background-color: lightgray;
 }
+.social-icons a{
+  color: black;
+  font-size: 25px;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #00bcd4;
+}
 @media (max-width: 900px) {
 
     .hero-text,
